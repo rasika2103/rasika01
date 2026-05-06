@@ -1,109 +1,80 @@
 from flask import Flask
 
-app = Flask(\__name_\_)
+app = Flask(__name__)
 
 @app.route("/")
-
 def home():
 
     return """
 
-    &lt;html&gt;
+    <html>
 
-    &lt;head&gt;
+    <head>
 
-        &lt;title&gt;PaaS Web App&lt;/title&gt;
+        <title>PaaS Web App</title>
 
-        &lt;style&gt;
+        <style>
 
             body {
-
                 margin: 0;
-
                 font-family: Arial;
-
                 background: linear-gradient(to right, #4facfe, #00f2fe);
-
                 color: white;
-
                 text-align: center;
-
             }
 
             .container {
-
                 margin-top: 100px;
-
             }
 
             h1 {
-
                 font-size: 50px;
-
             }
 
             .card {
-
                 background: rgba(255,255,255,0.2);
-
                 padding: 20px;
-
                 margin: 20px auto;
-
                 width: 50%;
-
                 border-radius: 10px;
-
             }
 
-        &lt;/style&gt;
+        </style>
 
-    &lt;/head&gt;
+    </head>
 
-    &lt;body&gt;
+    <body>
 
-        &lt;div class="container"&gt;
+        <div class="container">
 
-            &lt;h1&gt;🚀 My Cloud Web App&lt;/h1&gt;
+            <h1>🚀 My Cloud Web App</h1>
 
-            &lt;p&gt;Deployed using PaaS (Render)&lt;/p&gt;
+            <p>Deployed using PaaS (Render)</p>
 
-            &lt;div class="card"&gt;
+            <div class="card">
+                <h2>Project Info</h2>
+                <p>This app is created using Flask and deployed on cloud.</p>
+            </div>
 
-                &lt;h2&gt;Project Info&lt;/h2&gt;
+            <div class="card">
+                <h2>Features</h2>
+                <p>✔ Easy Deployment</p>
+                <p>✔ Cloud Hosting</p>
+                <p>✔ Scalable Platform</p>
+            </div>
 
-                &lt;p&gt;This app is created using Flask and deployed on cloud.&lt;/p&gt;
+            <div class="card">
+                <h2>Developed By</h2>
+                <p>Your Name</p>
+            </div>
 
-            &lt;/div&gt;
+        </div>
 
-            &lt;div class="card"&gt;
+    </body>
 
-                &lt;h2&gt;Features&lt;/h2&gt;
-
-                &lt;p&gt;✔ Easy Deployment&lt;/p&gt;
-
-                &lt;p&gt;✔ Cloud Hosting&lt;/p&gt;
-
-                &lt;p&gt;✔ Scalable Platform&lt;/p&gt;
-
-            &lt;/div&gt;
-
-            &lt;div class="card"&gt;
-
-                &lt;h2&gt;Developed By&lt;/h2&gt;
-
-                &lt;p&gt;Your Name&lt;/p&gt;
-
-            &lt;/div&gt;
-
-        &lt;/div&gt;
-
-    &lt;/body&gt;
-
-    &lt;/html&gt;
+    </html>
 
     """
 
-if **name** == "\__main_\_":
-
-    [app.run](http://app.run)()
+if __name__ == "__main__":
+    app.run(debug=True)
