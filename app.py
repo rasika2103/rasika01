@@ -65,7 +65,7 @@ def home():
 
             <div class="card">
                 <h2>Developed By</h2>
-                <p>Your Name</p>
+                <p>YRasika Sonawane</p>
             </div>
 
         </div>
